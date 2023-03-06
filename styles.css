@@ -131,6 +131,7 @@ body {
   background-color: whitesmoke;
   max-height: 100vh;
   justify-content:space-evenly;
+  
   /* margin: 20px; */
 }
 .intro {
@@ -142,7 +143,7 @@ body {
   justify-content: space-around;
   align-self: flex-start;
   background-color: whitesmoke;
-  padding-top: 20px;
+  padding-top: 5%;
   
 }
 
@@ -296,6 +297,7 @@ body {
   display: flex;
   background-color: whitesmoke;
   height: 100vh;
+  
 }
 
 .about-photo {
@@ -310,7 +312,7 @@ body {
   flex-direction: column;
   width: 50%;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   background-color: whitesmoke;
   padding-top: 20px;
 }
@@ -328,6 +330,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   line-height: 1.5;
+  padding: 10px;
   /* max-width: 400px; */
 }
 
@@ -351,76 +354,87 @@ body {
   background: var(--accent-color-dark);
 }
 /* SERVICES */
-.all-services {
-  display: flex;
+.services {
+  display: none;
   background-color: whitesmoke;
-  max-height: 100vh;
+  height: 100vh;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
-.services-intro {
+.service-left {
   display: flex;
   background-color: whitesmoke;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   align-items: center;
   justify-content: center;
   align-self: flex-start;
   background-color: whitesmoke;
   padding-top: 20px;
 }
-.services-heading {
-  font-size: 20px;
-  font-weight: 300;
+
+.service-left-heading {
+  font-family: 'Forum';
+  font-size: 30px;
+  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 30px;
   line-height: 1.1;
   max-width: 383px;
 }
-.services-image {
 
+.service-sample{
+margin: auto;
+padding: 20px;
 }
 
-.services {
+.service-sample-image {
+width: 100%;
+}
+
+.service-right {
   display: flex;
   background-color: whitesmoke;
   width: 50%;
   background-color: whitesmoke;
-  padding-top: 20px;
+  padding: 20px;
 }
 
-.single-service {
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  
+}
+
+.each-service {
   flex-direction: column;
   align-items: center;
-  width: 100px;
-  padding: 5px 0;
+  width: 50%;
+  padding: 10px;
   border-bottom: 1px solid #f2f3f8;
 }
 
-.service-heading {
-  font-size: 15px;
-  font-weight: 200;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  line-height: 1.1;
-}
-.service-desc {
-  font-size: 10px;
-  font-weight: 200;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  line-height: 1.1;
-}
-.seen-text {
+.each-service-heading {
+  font-family: 'Forum';
   font-size: 20px;
-  font-weight: 500;
-  color: #ccd0d9;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin-top: 20px;
+  height: 20%;
+  line-height: 1.1;
+  text-align: center;
+}
+.each-service-desc {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-.credential {
-
-}
 /* CONTACT SECTION */
 .contact {
   display: flex;
@@ -432,7 +446,7 @@ body {
   flex-direction: column;
   width: 50%;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   background-color: whitesmoke;
   padding-top: 20px;
 }
@@ -444,12 +458,14 @@ body {
   margin: 20px;
   line-height: 1.1;
   width: 50%;
+  text-align: center;
 }
 
 .contact-phone-email-social {
   display: flex;
   flex-direction: column;
   width: 50%;
+  
 }
 
 .contact-text {
@@ -457,12 +473,38 @@ body {
   font-weight: 400;
   max-width: 630px;
   opacity: 0.8;
-  line-height: 1.4;
+  line-height: 1.5;
+  padding-bottom: 5px;
 }
 
 .text--bold {
   font-weight: 700;
 }
+
+.social-links {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	font-family: 'Forum', sans-serif;
+	color: #555;
+  opacity: 50%;
+	/* border-radius: 10px; */
+	
+	/* background: white; */
+	margin-left: 7px;
+	transition: 1s;
+}
+
 
 .contact-hq-collab {
   display: flex;
@@ -474,7 +516,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   max-width: 383px;
   
 }
@@ -483,7 +525,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   margin-bottom: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   max-width: 383px;
 }
 
@@ -491,8 +533,9 @@ body {
   font-size: 17px;
   font-weight: 400;
   margin: 30px;
-  line-height: 1.1;
+  line-height: 1.5;
   width: 50%;
+  padding-top: 10%;
   
 }
 .contact-btn {
@@ -684,6 +727,12 @@ body {
   overflow: hidden;
 }
 
+.links {
+  display: flex;
+  column-gap: 20px;
+}
+
+
 /* INTRO SECTION */
 .intro-about {
   display: flex;
@@ -835,6 +884,85 @@ body {
   background: var(--accent-color-dark);
 }
 
+/* SERVICES */
+.services {
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: auto;
+  padding: 10px;
+}
+
+.service-left {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding-top: 20px;
+}
+
+.service-left-heading {
+  font-family: 'Forum';
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  max-width: 383px;
+  justify-self: auto;
+}
+
+.service-sample{
+margin: auto;
+padding: 20px;
+}
+
+.service-sample-image {
+width: 100%;
+}
+
+.service-right {
+  display: flex;
+  background-color: whitesmoke;
+  background-color: whitesmoke;
+  padding: 20px;
+  width: 100%;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.each-service {
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  border-bottom: 1px solid #f2f3f8;
+}
+
+.each-service-heading {
+  font-family: 'Forum';
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  height: 20%;
+  line-height: 1.1;
+  text-align: center;
+}
+.each-service-desc {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
 /* CONTACT SECTION */
 .contact {
   display: flex;
@@ -858,18 +986,19 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   background-color: whitesmoke;
   padding-top: 20px;
 }
 
 .contact-heading{
   font-family: 'Forum';
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   line-height: 1.1;
   width: 100%;
+  text-align: center;
 }
 
 .contact-phone-email-social {
@@ -886,6 +1015,7 @@ body {
   opacity: 0.8;
   line-height: 1.4;
 }
+
 
 .text--bold {
   font-weight: 700;
