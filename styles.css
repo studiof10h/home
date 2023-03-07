@@ -320,6 +320,7 @@ body {
   font-family: 'Forum';
   font-size: 30px;
   font-weight: 400;
+  padding-top: 40px;
   margin: 20px;
   line-height: 1.1;
   max-width: 400px;
@@ -355,7 +356,7 @@ body {
 }
 /* SERVICES */
 .services {
-  display: none;
+  display: flex;
   background-color: whitesmoke;
   height: 100vh;
   padding-bottom: 10%;
